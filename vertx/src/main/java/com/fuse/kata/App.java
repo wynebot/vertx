@@ -9,7 +9,7 @@ public class App
     {
         System.out.println( "Hello World!" );
         Vertx vertx = Vertx.vertx();
-        vertx.deployVerticle(new CarVerticle());
+        vertx.deployVerticle(new CarVerticle(vertx));
     }
 }
 
